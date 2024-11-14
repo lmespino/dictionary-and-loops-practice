@@ -43,22 +43,22 @@ students = student_data.students
 # Print all students who are in grade 10, with details such as their full name and CPS ID
 # Use a loop and a nested if statement to filter and format the output.
 
-# grade_level = 10 # this line assigns a variable with the number '10' to be able to find all students in grade 10
-# for student in students: # this is the for loop to loop through every student
-#     if grade_level == student['GL']: # this line will make an if statement that will only print student's information if their grade level is 10
-#         print(student['FName']) # this prints the first name
-#         print(student['MName']) # this prints the middle name
-#         print(student['LName']) # this prints the last name
-#         print(student['CPSID']) # this prints their student id
-#         print("-"*20) # this makes a line to seperate every student and their information
+grade_level = 10 # this line assigns a variable with the number '10' to be able to find all students in grade 10
+for student in students: # this is the for loop to loop through every student
+    if grade_level == student['GL']: # this line will make an if statement that will only print student's information if their grade level is 10
+        print(student['FName']) # this prints the first name
+        print(student['MName']) # this prints the middle name
+        print(student['LName']) # this prints the last name
+        print(student['CPSID']) # this prints their student id
+        print("-"*20) # this makes a line to seperate every student and their information
 
 
 # 5 Format Email List for Newsletter
 # Create a loop that formats and prints the email adresses of all students in a comma-seperated list.
 # Use a nested for loop to ensure both primary and secondary emails are included.
         
-# for student in students: # this is the for looop to loop through every student
-#     print(student['Email'][0], "," , student['Email'][1]) # this prints every student's primary and secondary emails in a seperated line
+for student in students: # this is the for looop to loop through every student
+    print(student['Email'][0], "," , student['Email'][1]) # this prints every student's primary and secondary emails in a seperated line
 
 
 # 7 Count Students by Homeroom
